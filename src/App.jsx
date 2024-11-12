@@ -1,7 +1,7 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import AppLayout from "./Layouts/AppLayout";
+import AppLayout from "./Layouts/app-layout";
 import JobListing from "./Pages/jobListing";
 import JobPage from "./Pages/job";
 import LandingPage from "./Pages/landing";
@@ -10,7 +10,7 @@ import OnBoarding from "./Pages/onboarding";
 import PostJobs from "./Pages/post-job";
 import SavedJobs from "./Pages/saved-jobs";
 import { ThemeProvider } from "./components/theme-provider";
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./components/protected-route";
 
 const router = createBrowserRouter([
   {

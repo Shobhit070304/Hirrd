@@ -11,7 +11,7 @@ import { Heart, MapPinIcon, Trash2Icon } from "lucide-react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { deleteJob, saveJob } from "@/api/apiJobs";
-import useFetch from "@/hooks/useFetch";
+import useFetch from "@/hooks/use-fetch";
 import { BarLoader } from "react-spinners";
 
 const JobCard = ({

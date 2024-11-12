@@ -1,5 +1,5 @@
 import { getSingleJob, updateHiringStatus } from "@/api/apiJobs";
-import useFetch from "@/hooks/useFetch";
+import useFetch from "@/hooks/use-fetch";
 import { useUser } from "@clerk/clerk-react";
 import { Briefcase, DoorOpen, MapPinIcon } from "lucide-react";
 import { useEffect } from "react";
@@ -13,8 +13,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import ApplyJobDrawer from "@/components/ApplyJobDrawer";
-import ApplicationCard from "@/components/ApplicationCard";
+import ApplyJobDrawer from "@/components/apply-job";
+import ApplicationCard from "@/components/application-card";
 
 const JobPage = () => {
   const { isLoaded, user } = useUser();

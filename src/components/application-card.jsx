@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import useFetch from "@/hooks/useFetch";
+import useFetch from "@/hooks/use-fetch";
 import { updateApplicationStatus } from "@/api/apiApplications";
 import { BarLoader } from "react-spinners";
 import {
