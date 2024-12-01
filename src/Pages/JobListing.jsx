@@ -1,6 +1,6 @@
 import { getCompanies } from "@/api/apiCompanies";
 import { getJobs } from "@/api/apiJobs";
-import JobCard from "@/components/job-card";
+import JobCard from "@/components/JobCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import useFetch from "@/hooks/use-fetch";

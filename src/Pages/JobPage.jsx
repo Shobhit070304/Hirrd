@@ -13,8 +13,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import ApplyJobDrawer from "@/components/apply-job";
-import ApplicationCard from "@/components/application-card";
+import ApplyJobDrawer from "@/components/ApplyJobDrawer";
+import ApplicationCard from "@/components/ApplicationCard";
 
 const JobPage = () => {
   const { isLoaded, user } = useUser();

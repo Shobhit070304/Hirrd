@@ -2,7 +2,7 @@ import useFetch from "@/hooks/use-fetch";
 import { useUser } from "@clerk/clerk-react";
 import { useEffect } from "react";
 import { BarLoader } from "react-spinners";
-import ApplicationCard from "./application-card";
+import ApplicationCard from "./ApplicationCard";
 import { getApplications } from "@/api/apiApplications";
 
 const CreatedApplications = () => {
