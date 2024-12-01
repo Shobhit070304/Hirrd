@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useUser } from "@clerk/clerk-react";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { BarLoader } from "react-spinners";
 
