@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 
 const Header = () => {
   const [showSignIn, setShowSignIn] = useState(false);
-  const {user} = useUser();
+  const { user } = useUser();
 
   const [search, setSearch] = useSearchParams();
 

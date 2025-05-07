@@ -19,6 +19,7 @@ const OnBoarding = () => {
       .catch((err) => {
         console.error("Error updating role :", err);
       });
+      console.log("HandleRole function")
   };
 
   useEffect(() => {
@@ -27,6 +28,7 @@ const OnBoarding = () => {
         user?.unsafeMetadata?.role === "recruiter" ? "/post-job" : "/jobs"
       );
     }
+    console.log("useeffect hook")
   }, [user]);
 
   if (!isLoaded) {
