@@ -5,30 +5,32 @@ const ProtectedRoute = ({ children }) => {
   const { isSignedIn, user, isLoaded } = useUser();
   const { pathname } = useLocation();
 
-  if (isLoaded && !isSignedIn && isSignedIn !== undefined) {
-    return <Navigate to="/?sign-in=true" />;
-  }
-
-  // Check onboarding status
-  if (
-    user !== undefined &&
-    !user?.unsafeMetadata?.role &&
-    pathname !== "/onboarding"
-  ) {
-    return <Navigate to="/onboarding" />;
-  }
-
-  // if (!isLoaded) {
-  //   return null; // or loading spinner
-  // }
-
-  // if (!isSignedIn) {
+  // if (isLoaded && !isSignedIn && isSignedIn !== undefined) {
   //   return <Navigate to="/?sign-in=true" />;
   // }
 
-  // if (!user?.unsafeMetadata?.role && pathname !== "/onboarding") {
+  // Check onboarding status
+  // if (
+    // user !== undefined 
+    // &&
+    // !user?.unsafeMetadata?.role &&
+    // pathname !== "/onboarding"
+  // ) {
   //   return <Navigate to="/onboarding" />;
   // }
+  // console.log("isLoaded", isLoaded, "isSignedIn", isSignedIn, "user", user, "pathname", pathname);
+
+  if (!isLoaded) {
+    return null; // or loading spinner
+  }
+
+  if (!isSignedIn) {
+    return <Navigate to="/?sign-in=true" />;
+  }
+
+  if (!user?.unsafeMetadata?.role && pathname !== "/onboarding") {
+    return <Navigate to="/onboarding" />;
+  }
 
   return children;
 };
